@@ -22,6 +22,7 @@ __Create container:__\
 
 - -d - detached mode;
 - -it - interactive mode;
+- --rm - to remove container after stop
 
 _-d and -it are opposite_
 
