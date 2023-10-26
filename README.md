@@ -81,6 +81,9 @@ __Connect a container to a network:__\
 
 # Docker-compose
 
+__WITHOUT sudo__. If sudo is used all folders/files are created under root user and no other users have access/permissions enough over files.\
+Which causes  `Permission denied` errors.
+
 __Run and stop existing containers:__\
 `docker-compose start|stop`
 
