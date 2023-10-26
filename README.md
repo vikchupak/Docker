@@ -9,6 +9,12 @@ https://learn.microsoft.com/en-us/windows/wsl/install \
 https://learn.microsoft.com/en-us/windows/wsl/setup/environment \
 https://docs.docker.com/engine/install/ubuntu/
 
+__docker/docker-compose versions__\
+https://docs.docker.com/engine/reference/commandline/version/ \
+`docker --version`\
+`docker version`\
+`docker compose version`
+
 __status/start/stop in wsl2__
 
 `sudo service docker status`\
