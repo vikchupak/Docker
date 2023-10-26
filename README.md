@@ -1,5 +1,7 @@
 # Docker cheatsheet
 
+https://www.linux.org.ru/forum/desktop/16933835
+
 There is no reall need in Docker Desktop for Windows/Liux if we have docker installed in wsl2(Ubuntu) via `apt` repository https://docs.docker.com/engine/install/ubuntu/
 
 https://learn.microsoft.com/en-us/windows/wsl/install \
