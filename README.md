@@ -9,7 +9,7 @@ https://learn.microsoft.com/en-us/windows/wsl/install \
 https://learn.microsoft.com/en-us/windows/wsl/setup/environment \
 https://docs.docker.com/engine/install/ubuntu/
 
-Also, it is important to install node.js inside wsl2\
+Also, it is important to install node.js inside wsl2. Otherwise, we will try to run node.js project from windows wchich will result in errors.\
 https://stackoverflow.com/questions/74000168/running-a-express-server-from-wsl-unc-paths-are-not-supported
 
 __docker/docker-compose versions__\
