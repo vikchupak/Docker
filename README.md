@@ -2,7 +2,8 @@
 
 https://www.linux.org.ru/forum/desktop/16933835
 
-There is no reall need in Docker Desktop for Windows/Liux if we have docker engine installed in wsl2(Ubuntu) via `apt` repository https://docs.docker.com/engine/install/ubuntu/
+There is no reall need in Docker Desktop for Windows/Liux if we have docker engine installed in wsl2(Ubuntu) via `apt` repository https://docs.docker.com/engine/install/ubuntu/ \
+In this case, we need to install docker-compose separately https://docs.docker.com/compose/install/ as well via `apt` repository
 
 https://learn.microsoft.com/en-us/windows/wsl/install \
 https://learn.microsoft.com/en-us/windows/wsl/setup/environment \
