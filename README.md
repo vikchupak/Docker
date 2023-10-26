@@ -1,5 +1,11 @@
 # Docker cheatsheet
 
+__status/start/stop in wsl2__
+
+`sudo service docker status`\
+`sudo service docker start`\
+`sudo service docker stop`
+
 __Pull image:__\
 `docker pull <image_name:[tag]>`
 
