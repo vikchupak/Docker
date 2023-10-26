@@ -1,5 +1,7 @@
 # Docker cheatsheet
 
+There is no reall need in Docker Desktop for Windows/Liux if we have docker installed in wsl2(Ubuntu) via `apt` repository https://docs.docker.com/engine/install/ubuntu/
+
 __status/start/stop in wsl2__
 
 `sudo service docker status`\
