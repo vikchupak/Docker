@@ -93,3 +93,25 @@ __Build and start or stop and remove containers:__\
 `docker-compose up|down [--build]`
 
 - --build to force rebuild of the containers
+
+__Work with contexts and builds:__\
+`docker context ls`\
+`docker context use <name>`\
+https://docs.docker.com/build/builders/#selected-builder \
+`docker buildx ls`\
+`docker buildx use <name>`
+
+__Enable/disable on system startup:__\
+https://askubuntu.com/questions/766318/disable-docker-autostart-at-boot \
+https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot-with-systemd \
+`sudo systemctl status docker`
+
+`sudo systemctl disable docker.service`\
+`sudo systemctl disable docker.socket`\
+`sudo systemctl disable containerd.service`
+
+Docker-desktop enable on boot: https://docs.docker.com/desktop/install/ubuntu/ \
+`sudo systemctl --user enable docker-desktop`
+
+![Screenshot from 2024-02-15 22-43-24](https://github.com/VIK2395/docker_commands/assets/50545334/a3c853e3-92f2-41d0-b578-a22c65dec244)
+
