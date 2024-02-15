@@ -104,6 +104,7 @@ https://docs.docker.com/build/builders/#selected-builder \
 __Enable/disable on system startup:__\
 https://askubuntu.com/questions/766318/disable-docker-autostart-at-boot \
 https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot-with-systemd \
+`sudo systemctl start docker`\
 `sudo systemctl status docker`
 
 `sudo systemctl disable docker.service`\
