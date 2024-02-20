@@ -116,3 +116,13 @@ Docker-desktop enable on boot: https://docs.docker.com/desktop/install/ubuntu/ \
 
 ![Screenshot from 2024-02-15 22-43-24](https://github.com/VIK2395/docker_commands/assets/50545334/a3c853e3-92f2-41d0-b578-a22c65dec244)
 
+# Docker Desktop Problems
+There might be a problem with dns while building images/containers:
+- which leads to an infinite loading or couldn't resolve host error
+
+The fix described here:\
+https://stackoverflow.com/questions/24991136/docker-build-could-not-resolve-archive-ubuntu-com-apt-get-fails-to-install-a
+
+![Screenshot from 2024-02-20 22-22-38](https://github.com/VIK2395/docker_commands/assets/50545334/e588213a-14fa-4251-8059-a9ce8d214412)
+
+__Important: each vpn has its own dns ip, so we should add every vpn's dns ip to the config to freely switch between the vpns.__
