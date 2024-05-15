@@ -101,6 +101,8 @@ https://docs.docker.com/build/builders/#selected-builder \
 `docker buildx ls`\
 `docker buildx use <name>`
 
+__Note: when there are conteiners in different contexts, but using the same port, we will have an error 'port already in use'__
+
 __Enable/disable on system startup:__\
 https://askubuntu.com/questions/766318/disable-docker-autostart-at-boot \
 https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot-with-systemd \
