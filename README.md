@@ -132,3 +132,13 @@ __Important: each vpn has its own dns ip, so we should add every vpn's dns ip to
 # Docker Cleanup
 
 https://stackoverflow.com/questions/44785585/how-can-i-delete-all-local-docker-images
+
+__Stop all running containers:__\
+`docker stop $(docker ps -q)`
+
+- -q stands for "quiet", and is used to output containers' IDs only, instead of all the data
+
+__Remove everything:__\
+`docker system prune -a --volumes`
+
+- About flags https://docs.docker.com/reference/cli/docker/system/prune/#extended-description
