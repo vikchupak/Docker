@@ -16,7 +16,7 @@ __docker/docker-compose versions__\
 https://docs.docker.com/engine/reference/commandline/version/ \
 `docker version` - docker version\
 `docker --version` - docker CLI version\
-`docker compose version - `
+`docker compose version`
 
 __status/start/stop in wsl2__
 
