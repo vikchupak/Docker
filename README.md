@@ -136,7 +136,7 @@ This creates directories on host instead of files \
 ![Screenshot from 2024-08-12 19-06-29](https://github.com/user-attachments/assets/3513ad13-b417-4b9d-b7ef-0f5d4c96bf54)
 
 Problem explanation \
-The reason is no real files on the host when containers are being created \
+The reason is no real files on the host (or in containers) when containers are being created \
 https://stackoverflow.com/questions/34134343/single-file-volume-mounted-as-directory-in-docker
 
 Solution \
