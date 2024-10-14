@@ -61,7 +61,7 @@ __Open a shell inside a running container:__\
 __Attach to a container:__\
 `docker attach <container_name or container_id>`
 
-_The container logs will be seen, but it is not interactive mode;_
+_The container logs will be seen, but it is not interactive mode; This undo -d flag in `docker run -d ...`_
 
 `Ctrl + C` _here will stop the container;_
 
