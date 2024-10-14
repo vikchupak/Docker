@@ -57,6 +57,7 @@ __Open a shell inside a running container:__\
 `docker exec -it <container_name or container_id> sh|bash`
 
 _This is NOT interfering with the main process, but starts a new one additional_
+_It is like openning a new terminal inside a container_
 
 `exit` to quit;
 
