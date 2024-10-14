@@ -56,7 +56,7 @@ __Start and stop container:__\
 __Open a shell inside a running container:__\
 `docker exec -it <container_name or container_id> sh|bash`
 
-_This is NOT interfering with the main process, but starts a new one additional_
+_This is NOT interfering with the main process, but starts a new one additional._\
 _It is like openning a new terminal inside a container_
 
 `exit` to quit;
@@ -64,7 +64,7 @@ _It is like openning a new terminal inside a container_
 __Attach to a container:__\
 `docker attach <container_name or container_id>`
 
-_The container logs will be seen, but only newly generated after attaching, but it is not interactive mode; This like undo -d flag in `docker run -d ...`_
+_The container logs will be seen, but only newly generated after attaching, but it is not interactive mode; This like undo -d flag in `docker run -d ...`_\
 _This connects to a running container’s __main process__ allowing you to interact with its output (stdin, stdout, stderr)_
 
 `Ctrl + C` _here will stop the container;_
