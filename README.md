@@ -340,6 +340,8 @@ For example:
 
 In this case, Docker is using a credential store (e.g., macOS Keychain) to manage authentication, and the actual token is not visible in `config.json`.
 
+***Note: On my ubuntu OS, Docker-Desktop uses `pass` with `docker-credential-helpers`. So knowing how to deal with pass, we can see the creds.***
+
 ### To summarize:
 - **`~/.docker/config.json`** contains your stored credentials or references to external credential stores.
 - You can decode Base64-encoded tokens, but if credential helpers are used, the tokens are stored securely elsewhere.
