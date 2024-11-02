@@ -1,4 +1,4 @@
-# Mount docker runtime from a host to a container
+# Mount docker runtime from the Host to a container
 ```bash
 # Mount docker.sock to allow the Jenkins instance inside the container to communicate with Docker on the host machine
 docker run -p 8080:8080 \
