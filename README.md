@@ -356,7 +356,10 @@ jenkins/jenkins:lts
 ```
 
 ```bash
-# Inside contailer install docker CLI to enable you to run commands like docker build or docker run from within Jenkins
+# Inside contailer
+# 1. Set correct permissions on docker.sock file
+chmod 666 /var/run/docker.sock
+# 2. Install docker CLI to enable you to run commands like docker build from within Jenkins
 curl https://get.docker.com/ > dockerinstall && chmode 777 && ./dockerinstall
 ```
 
