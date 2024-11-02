@@ -55,6 +55,10 @@ __Start and stop container:__\
 
 __Open a shell inside a running container:__\
 `docker exec -it <container_name or container_id> sh|bash`
+```
+# Open as root
+docker exec -u 0 -it <container_name or container_id> sh|bash
+```
 
 _This is NOT interfering with the main process, but starts a new one additional._\
 _It is like openning a new terminal inside a container_
