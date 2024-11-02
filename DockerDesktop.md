@@ -13,7 +13,12 @@ sudo systemctl list-units --type=service --all | grep docker
 
 ```bash
 # To kill Docker-Desktop
-sudo killall com.docker.backend
+sudo killall [-9] com.docker.backend
+```
+![Screenshot from 2024-11-02 22-52-10](https://github.com/user-attachments/assets/4673598a-7f47-4b32-b134-679f8cdb4fe8)
+```bash
+# To run Docker-Desctop from terminal
+/opt/docker-desktop/bin/com.docker.backend
 ```
 
 The `com.docker.backend` process is part of Docker Desktop for macOS and Windows. It is responsible for managing various backend operations of Docker Desktop, including interacting with the Docker daemon and handling the GUI elements of the application.
