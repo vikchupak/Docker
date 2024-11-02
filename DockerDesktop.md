@@ -11,7 +11,7 @@ sudo systemctl list-units --type=service --all | grep docker
 
 **Docker-Desktop is run as a process, not a service. The main process is `com.docker.backend`**
 
-```
+```bash
 # To kill Docker-Desktop
 sudo killall com.docker.backend
 ```
