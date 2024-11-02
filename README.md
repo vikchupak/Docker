@@ -345,3 +345,6 @@ In this case, Docker is using a credential store (e.g., macOS Keychain) to manag
 ### To summarize:
 - **`~/.docker/config.json`** contains your stored credentials or references to external credential stores.
 - You can decode Base64-encoded tokens, but if credential helpers are used, the tokens are stored securely elsewhere.
+
+# Mount docker runtime from a host to a container
+![image](https://github.com/user-attachments/assets/3e5d8dfd-e6d8-4ed7-a7d1-f2a2f8a7ab29)
