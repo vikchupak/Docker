@@ -11,7 +11,7 @@ Docker engine
   - Volumes
   - Network
   - Image builder (builds images)
-- CLI (Client, uses Docker REST API to talk to Docker Deamon|Server)
+- CLI (Client, uses Docker REST API to talk to Docker Deamon | Server)
 
 ```bash
  # systemctl status docker
