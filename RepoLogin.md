@@ -1,6 +1,6 @@
 # Auth to DockerHub
 
-We do not need to authenticate to DockerHub and provode hostname explicitly
+We do not need to authenticate to DockerHub and provide hostname explicitly. It is used as default.
 ```bash
 # By default, docker pulls from DockerHub
 docker pull redis
