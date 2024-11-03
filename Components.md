@@ -2,8 +2,8 @@ https://docs.docker.com/engine/
 
 Docker engine
 - Deamon | Server (`docker.service`, `dockerd` main process)
-  - Container runtime (runs containers. `containerd.service`, `containerd` main process)
   - API (REST API)
+  - Container runtime (runs containers. `containerd.service`, `containerd` main process)
   - Volumes
   - Network
   - Image builder (builds images)
