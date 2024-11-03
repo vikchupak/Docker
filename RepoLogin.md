@@ -1,3 +1,13 @@
+# Auth to DockerHub
+
+We do not need to authenticate to DockerHub and provode hostname explicitly
+```bash
+# By default, docker pulls from DockerHub
+docker pull redis
+# Is equivalent to
+docker pull docker.io/library/redis:latest
+```
+
 # Authenticate to docker repositories
 
 https://docs.docker.com/reference/cli/docker/login/
