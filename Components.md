@@ -6,11 +6,11 @@
 
 Docker engine
 - Deamon | Server (`docker.service`, `dockerd` main process)
-  - API (REST API)
+  - API (REST API throuch which the CLI client talks to Docker server)
   - Container runtime (runs containers. `containerd.service`, `containerd` main process)
   - Volumes
   - Network
-  - Image builder (builds images, BuildKit backend | server && )
+  - Image builder (builds images, BuildKit backend | server && Buildx client)
 - CLI (Client, uses Docker REST API to talk to Docker Deamon | Server)
 
 ```bash
