@@ -1,6 +1,6 @@
 - https://docs.docker.com/engine/
 - https://docs.docker.com/engine/daemon/start/
-- https://docs.docker.com/build/concepts/overview/ (Docker Build)
+- https://docs.docker.com/build/concepts/overview/ (Docker Build. We can create multiple builders par a context)
 - https://docs.docker.com/build/builders/#selected-builder
 - https://docs.docker.com/engine/manage-resources/contexts/ (Contexts are used to switch between different deamons that still use the same client)
 
