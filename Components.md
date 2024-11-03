@@ -10,7 +10,7 @@ Docker engine
   - Container runtime (runs containers. `containerd.service`, `containerd` main process)
   - Volumes
   - Network
-  - Image builder (builds images)
+  - Image builder (builds images, BuildKit backend)
 - CLI (Client, uses Docker REST API to talk to Docker Deamon | Server)
 
 ```bash
