@@ -2,6 +2,7 @@
 - https://docs.docker.com/engine/daemon/start/
 - https://docs.docker.com/build/concepts/overview/ (Docker Build)
 - https://docs.docker.com/build/builders/#selected-builder
+- https://docs.docker.com/engine/manage-resources/contexts/ (Contexts are used to switch between different deamons)
 
 Docker engine
 - Deamon | Server (`docker.service`, `dockerd` main process)
