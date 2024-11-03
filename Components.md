@@ -7,7 +7,7 @@ Docker engine
   - Volumes
   - Network
   - Image builder (builds images)
-- CLI (client, uses docker REST api)
+- CLI (Client, uses docker REST api)
 
 ```bash
  # systemctl status docker
