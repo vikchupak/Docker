@@ -1,17 +1,22 @@
+# Docker components/architecture
+
+Useful links:
 - https://docs.docker.com/engine/
 - https://docs.docker.com/engine/daemon/start/
 - https://docs.docker.com/build/concepts/overview/ (Docker Build. We can create multiple builders per a context. Each builder in buildx is associated with a specific Docker context. Switching builders may also switch the Docker context if the builder is tied to a different context)
 - https://docs.docker.com/build/builders/#selected-builder
 - https://docs.docker.com/engine/manage-resources/contexts/ (Contexts are used to switch between different deamons that still use the same client)
 
-Docker engine
-- Deamon | Server (`docker.service`, `dockerd` main process)
-  - API (REST API throuch which the CLI client talks to Docker server)
-  - Container runtime (runs containers. `containerd.service`, `containerd` main process)
-  - Volumes
-  - Network
-  - Image builder (builds images, BuildKit backend | server && Buildx client)
-- CLI (Client, uses Docker REST API to talk to Docker Deamon | Server)
+**Architecture**
+
+- Docker engine
+  - Deamon | Server (`docker.service`, `dockerd` main process)
+    - API (REST API throuch which the CLI client talks to Docker server)
+    - Container runtime (runs containers. `containerd.service`, `containerd` main process)
+    - Volumes
+    - Network
+    - Image builder (builds images, BuildKit backend | server && Buildx client)
+  - CLI (Client, uses Docker REST API to talk to Docker Deamon | Server)
 
 ```bash
  # systemctl status docker
@@ -33,3 +38,7 @@ TriggeredBy: ● docker.socket
              ├─3600 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 3046 -container-ip 172.18.0.3 -container-port 80
              └─3607 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 3046 -container-ip 172.18.0.3 -container-port 80
 ```
+
+# More about Docker Client-Server communication
+
+- https://github.com/VIK2395/DevOps/blob/main/Linux/ShellScripting/CliAndInterpreter.md
