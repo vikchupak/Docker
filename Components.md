@@ -42,5 +42,4 @@ TriggeredBy: ● docker.socket
 # More about Docker Client-Server communication
 
 - https://github.com/VIK2395/DevOps/blob/main/Linux/ShellScripting/CLI.Commands.md
-- https://github.com/VIK2395/DevOps/blob/main/Linux/FileSystem/SocketFiles/HttpRestOverSockets.md
-
+- https://github.com/VIK2395/DevOps/blob/main/Linux/FileSystem/SocketFiles/httpRestOverSockets.md
