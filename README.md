@@ -100,9 +100,12 @@ __Run and stop existing containers:__\
 `docker-compose start|stop`
 
 __Build and start or stop and remove containers:__\
-`docker-compose up|down [--build]`
+`docker-compose up|down [options] [serviceName]`
 
-- --build to force rebuild of the containers
+- `--force-recreate` to recreate containers for services even if their configuration or image hasn’t changed
+- `--no-deps` to start a service without starting its dependent services specified in `depends_on`
+- `--build` to force rebuild images
+- `--no-cache` to build images without using any cached layers
 
 __Work with contexts and builds:__\
 `docker context ls`\
