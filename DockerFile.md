@@ -10,7 +10,7 @@ ARG <name>[=<default value>]
 - If a default value is not defined and no value is passed during the build, the ARG will remain undefined (empty string).
 - Docker does not raise an error if you pass a --build-arg for an argument that is not declared in the Dockerfile. It silently ignores the argument.
 
-## WORKDIR
+## `WORKDIR`
 
 ```dockerfile
 WORKDIR <path>
@@ -19,3 +19,4 @@ WORKDIR <path>
 - The WORKDIR instruction in a Dockerfile sets the working directory for any subsequent instructions in the Dockerfile (e.g., RUN, CMD, COPY, and ADD) and for the container runtime when it starts.
 - If the directory does not exist, Docker automatically creates it.
 - When the container starts, it will begin execution in the WORKDIR.
+
