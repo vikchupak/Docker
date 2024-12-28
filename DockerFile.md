@@ -1,4 +1,4 @@
-## build-time arguments (ARG)
+## Build-time arguments (ARG)
 
 ```dockerfile
 ARG <name>[=<default value>]
