@@ -20,3 +20,14 @@ WORKDIR <path>
 - If the directory does not exist, Docker automatically creates it.
 - When the container starts, it will begin execution in the WORKDIR.
 
+## `RUN`
+
+```dockerfile
+FROM ubuntu:20.04
+
+# Install curl (modifies the image)
+RUN apt-get update && apt-get install -y curl
+```
+
+- The RUN instruction is used to execute commands at build time to modify the image. These commands create a new layer in the image.
+- The results of RUN commands are saved into the image (e.g., installed packages, modified files).
