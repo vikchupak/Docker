@@ -11,3 +11,4 @@
    - https://docs.docker.com/compose/intro/compose-application-model/
 4. Compose command is now `docker compose`, not `docker-compose`
    - https://stackoverflow.com/questions/66514436/difference-between-docker-compose-and-docker-compose
+   - https://docs.docker.com/compose/intro/compose-application-model/
