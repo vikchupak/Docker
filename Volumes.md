@@ -1,4 +1,4 @@
-# Volume type
+# Volume types
 
 - Hosted
   - `/host/path:/container/data/path`
