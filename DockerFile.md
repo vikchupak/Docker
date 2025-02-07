@@ -1,3 +1,45 @@
+## `USER`
+
+The USER command in a Dockerfile is used to specify the user that will run subsequent commands inside the container. By default, Docker containers run as the root user.
+
+```dockerfile
+FROM ubuntu:latest
+
+# Create a new user
+RUN useradd -m myuser
+
+# Switch to the new user
+USER myuser
+
+# Commands after this will run as 'myuser'
+CMD ["whoami"]
+```
+
+```dockerfile
+FROM node:18
+
+# Create a non-root user
+RUN useradd --create-home --shell /bin/bash appuser
+
+# Set working directory and switch user
+WORKDIR /home/appuser
+USER appuser
+
+# Copy files and install dependencies
+COPY --chown=appuser:appuser package.json .
+RUN npm install
+
+CMD ["node", "app.js"]
+```
+
+```dockerfile
+FROM jenkins
+# if we want to install via apt
+USER root
+RUN apt-get update && apt-get install -y ruby make more-thing-here
+USER jenkins # drop back to the regular jenkins user - good practice
+```
+
 ## `ARG` build-time arguments
 
 ```dockerfile
