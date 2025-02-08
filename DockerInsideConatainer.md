@@ -17,7 +17,7 @@ Docker uses a **Docker daemon** to manage containers. In DinD, the **Docker daem
    - The **`--privileged`** flag gives the container full access to the host system's kernel and allows it to run Docker inside Docker.
    - This is the **default and most common method** to enable Docker-in-Docker because it gives the container sufficient privileges to create and manage Docker containers.
    
-2. **Using Docker Socket Binding (Alternative)**:
+2. **Docker Socket Binding|Mount (Alternative)**:
    - Instead of running Docker inside a container, you can **bind mount the Docker socket** from the host into the container. This method **does not require privileged mode** and provides the container access to the host's Docker daemon, allowing you to run Docker commands on the host system directly.
    - **Pros**: Safer and less resource-heavy.
    - **Cons**: The container can still affect the host system (if not properly isolated).
