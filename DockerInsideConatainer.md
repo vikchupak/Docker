@@ -22,6 +22,19 @@ Docker uses a **Docker daemon** to manage containers. In DinD, the **Docker daem
    - **Pros**: Safer and less resource-heavy.
    - **Cons**: The container can still affect the host system (if not properly isolated).
 
+## `Mounting Docker Socket` is really considered Docker-in-docker?
+
+Mounting the Docker socket is not the same as Docker-in-Docker (DinD), though both involve Docker inside a Docker environment.
+
+- **Docker-in-Docker (DinD)** involves running a full **Docker daemon inside a container**. This allows the container to launch its own containers, effectively running Docker within Docker. This is typically done with the --privileged flag or running Docker as a service inside the container.
+
+- **Mounting the Docker socket** means giving the Jenkins container access to the host’s existing Docker daemon by linking the Docker socket (/var/run/docker.sock) from the host to the container. Instead of running a Docker daemon inside the Jenkins container, the Jenkins container communicates directly with the Docker daemon running on the host machine.
+
+In summary:
+
+- Docker-in-Docker can be considered **true** "Docker in Docker" because you're running Docker from inside a container.
+- Mounting the Docker socket **isn't truly "Docker-in-Docker,"** because you're not running Docker inside the container—you're simply giving the container access to the host's Docker daemon.
+
 ---
 
 ### **Using Docker-in-Docker with Jenkins**
