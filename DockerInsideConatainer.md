@@ -146,9 +146,7 @@ Docker-in-Docker (DinD) is an incredibly useful tool for CI/CD pipelines like Je
 
 Would you like help with a **specific setup** or **Docker-in-Docker implementation**? 🚀
 
-# Using Docker Compose with Jenkins
-
-### **Using Docker Compose with Jenkins (still uses Host Docker Socket Binding)**
+# Using Docker Compose with Jenkins (still uses Host Docker Socket Binding)
 
 **Docker Compose** is a tool that allows you to define and run multi-container Docker applications. Using **Docker Compose** in conjunction with **Jenkins** allows you to define complex environments (e.g., databases, web servers, etc.) for testing and building within your **CI/CD pipeline**. Jenkins can manage these containers through the host's Docker daemon, simplifying orchestration without needing to use **Docker-in-Docker (DinD)**.
 
