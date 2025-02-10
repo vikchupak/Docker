@@ -342,7 +342,7 @@ jenkins/jenkins:lts
 # 1. Set correct permissions on docker.sock file
 chmod 666 /var/run/docker.sock
 # 2. Install docker CLI to enable you to run commands like docker build from within Jenkins
-curl https://get.docker.com/ > dockerinstall && chmode 777 && ./dockerinstall
+curl https://get.docker.com/ > dockerinstall && chmod 777 dockerinstall && ./dockerinstall
 ```
 
 When you run `curl https://get.docker.com/ > dockerinstall && chmod 777 dockerinstall && ./dockerinstall` inside the Jenkins container, you’re actually installing the **Docker Engine**, which includes both the Docker **CLI** (client) and the **Daemon**. However, only the CLI is relevant and functional in this context because:
