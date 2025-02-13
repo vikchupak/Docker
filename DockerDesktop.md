@@ -27,3 +27,5 @@ Socket location
 ```bash
 /home/viktor/.docker/desktop/docker.sock
 ```
+
+![Screenshot from 2025-02-13 22-38-37](https://github.com/user-attachments/assets/3116903a-28b1-4deb-a087-cf805a98ff88)
