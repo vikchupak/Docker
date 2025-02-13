@@ -22,3 +22,8 @@ sudo killall [-9] com.docker.backend
 ```
 
 The `com.docker.backend` process is part of Docker Desktop for macOS and Windows. It is responsible for managing various backend operations of Docker Desktop, including interacting with the Docker daemon and handling the GUI elements of the application.
+
+Socket location
+```bash
+/home/viktor/.docker/desktop/docker.sock
+```
