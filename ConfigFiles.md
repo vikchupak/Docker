@@ -9,6 +9,10 @@ docker info
 ```
 
 ```bash
+/var/run/docker.sock
+```
+
+```bash
 ~/.docker/config.json
 ```
 
