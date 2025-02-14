@@ -31,17 +31,18 @@ sudo snap disable docker
 sudo snap enable docker
 ```
 
-docker.sock location inside snap
+`docker.sock` location inside snap
 ```bash
 docker context ls
 # DOCKER ENDPOINT: unix:///var/run/docker.sock
 ```
 
-docker.sock location on host
+real `docker.sock` location on host
 ```bash
 sudo find / -name docker.sock
 # /run/docker.sock
 ```
-
 snap docker.sock location
 ![image](https://github.com/user-attachments/assets/95c6b47f-29c2-4e48-9a94-822886da4d4b)
+
+![image](https://github.com/user-attachments/assets/1bbbb3cb-81ec-452c-9a44-34b439afeef5)
