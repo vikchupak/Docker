@@ -31,7 +31,7 @@ sudo snap disable docker
 sudo snap enable docker
 ```
 
-## docker.sock location
+## `docker.sock` location
 
 `docker.sock` listening location
 ```bash
@@ -49,7 +49,7 @@ sudo find / -name docker.sock
 
 ![image](https://github.com/user-attachments/assets/1bbbb3cb-81ec-452c-9a44-34b439afeef5)
 
-## daemon.json location
+## `daemon.json` location
 
 ```bash
 sudo find / -name daemon.json
