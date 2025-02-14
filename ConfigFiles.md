@@ -29,6 +29,7 @@ sudo snap install docker
 sudo groupadd docker && sudo usermod -aG docker $USER && newgrp docker
 sudo snap disable docker
 sudo snap enable docker
+# sudo snap restart docker # need to try this!
 ```
 
 ## `docker.sock` location
