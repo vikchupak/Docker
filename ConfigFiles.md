@@ -6,6 +6,8 @@ docker info
 
 ```bash
 ~/.docker/deamon.json
+# or
+/etc/docker/daemon.json
 ```
 
 ```bash
