@@ -37,12 +37,12 @@ docker context ls
 # DOCKER ENDPOINT: unix:///var/run/docker.sock
 ```
 
-real `docker.sock` location on host
+Real `docker.sock` location on host
 ```bash
 sudo find / -name docker.sock
 # /run/docker.sock
 ```
-snap docker.sock location
+
 ![image](https://github.com/user-attachments/assets/95c6b47f-29c2-4e48-9a94-822886da4d4b)
 
 ![image](https://github.com/user-attachments/assets/1bbbb3cb-81ec-452c-9a44-34b439afeef5)
