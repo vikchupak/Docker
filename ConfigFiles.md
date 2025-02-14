@@ -17,3 +17,6 @@ docker info
 ```bash
 sudo systemctl restart docker
 ```
+
+snap docker.sock location
+![image](https://github.com/user-attachments/assets/95c6b47f-29c2-4e48-9a94-822886da4d4b)
