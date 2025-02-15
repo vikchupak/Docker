@@ -105,3 +105,8 @@ sudo chown :docker /home/viktor/.docker/desktop/docker.sock
 # But actually it points to itself
 sudo ln -s /home/viktor/.docker/desktop/docker.sock /var/run/docker.sock
 ```
+
+```bash
+# Inside container add the container user to docker group with the same GID as on host
+groupadd -g 999 docker && usermod -aG docker jenkins
+```
