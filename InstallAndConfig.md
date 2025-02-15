@@ -1,0 +1,81 @@
+# Useful commands to debug docker installation
+
+See docker configuration
+```bash
+docker info
+# "Insecure Registries"
+```
+
+See `docker.sock` listening location
+```bash
+docker context ls
+# DOCKER ENDPOINT: unix:///var/run/docker.sock
+```
+
+Find config files when unsure
+```bash
+sudo find / -name daemon.json
+# /var/snap/docker/2976/config/daemon.json
+```
+
+# Using apt
+
+Just follow official doc
+- https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
+## apt config files location
+
+```bash
+/etc/docker/daemon.json
+```
+
+```bash
+/var/run/docker.sock
+```
+
+```bash
+~/.docker/config.json
+```
+
+```bash
+sudo systemctl restart docker
+```
+
+# Using snap
+
+https://askubuntu.com/questions/941816/permission-denied-when-running-docker-after-installing-it-as-a-snap
+
+compose is included
+```bash
+sudo snap install docker
+sudo groupadd docker && sudo usermod -aG docker $USER && newgrp docker
+sudo snap restart docker
+```
+
+## snap config files location
+
+`docker.sock` listening location
+```bash
+docker context ls
+# DOCKER ENDPOINT: unix:///var/run/docker.sock
+```
+
+Real `docker.sock` location on host
+```bash
+sudo find / -name docker.sock
+# /run/docker.sock
+```
+
+![image](https://github.com/user-attachments/assets/95c6b47f-29c2-4e48-9a94-822886da4d4b)
+
+![image](https://github.com/user-attachments/assets/1bbbb3cb-81ec-452c-9a44-34b439afeef5)
+
+```bash
+sudo find / -name daemon.json
+# /var/snap/docker/2976/config/daemon.json
+```
+
+# Using Docker-Desktop
+
+Just follow official doc for Docker-Desktop installation
+- https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
