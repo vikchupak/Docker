@@ -35,3 +35,5 @@ Socket location
 ```bash
 docker run -it --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh
 ```
+
+https://github.com/vikchupak/DevOps/blob/main/Linux/Virtualization/Docker.md#docker-desktop-on-linux-also-uses-vm
