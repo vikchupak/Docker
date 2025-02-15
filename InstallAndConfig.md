@@ -94,11 +94,13 @@ But mounting via volume doesn't work for this sock
 
 ## Mount Docker Desktop sock
 
+Skip. Doesn't work
 ```bash
 Change socket group from viktor to docker
 sudo chown :docker /home/viktor/.docker/desktop/docker.sock
 ```
 
+Apply. Works
 ```bash
 # Create symbolic to Docker Desktop socket from default docker.sock location
 # This makes Docker Desktop "think" there is defaul docker context
@@ -109,6 +111,6 @@ sudo ln -s /home/viktor/.docker/desktop/docker.sock /var/run/docker.sock
 ```bash
 # Inside container add the container user to docker group with the same GID as on host
 groupadd -g 999 docker && usermod -aG docker jenkins
-# Change permission on docker.sock inside container
+# Change group on docker.sock inside container
 chown root:docker /var/run/docker.sock
 ```
