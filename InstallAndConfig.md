@@ -75,7 +75,33 @@ sudo find / -name daemon.json
 # /var/snap/docker/2976/config/daemon.json
 ```
 
-# Using Docker-Desktop
+# Using Docker Desktop
 
 Just follow official doc for Docker-Desktop installation
 - https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
+## Docker Desktop config files location
+
+Docker-desktop docker.sock location
+```bash
+But mounting via volume doesn't work for this sock
+/home/viktor/.docker/desktop/docker.sock
+```
+
+```bash
+/home/viktor/.docker/daemon.json
+```
+
+## Mount Docker Desktop sock
+
+```bash
+Change socket group from viktor to docker
+sudo chown :docker /home/viktor/.docker/desktop/docker.sock
+```
+
+```bash
+# Create symbolic to Docker Desktop socket from default docker.sock location
+# This makes Docker Desktop "think" there is defaul docker context
+# But actually it points to itself
+sudo ln -s /home/viktor/.docker/desktop/docker.sock /var/run/docker.sock
+```
