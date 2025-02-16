@@ -30,7 +30,7 @@ Socket location
 
 ![Screenshot from 2025-02-13 22-38-37](https://github.com/user-attachments/assets/3116903a-28b1-4deb-a087-cf805a98ff88)
 
-# Access Docker-Desktop underling VM
+# Access Docker-Desktop underlying VM
 
 ```bash
 docker run -it --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh
