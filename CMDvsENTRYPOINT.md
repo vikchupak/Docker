@@ -1,5 +1,7 @@
 # CMD vs ENTRYPOINT
 
+- https://stackoverflow.com/questions/21553353/what-is-the-difference-between-cmd-and-entrypoint-in-a-dockerfile
+
 In Docker, both `CMD` and `ENTRYPOINT` define the default commands that are executed when a container starts. However, they have slightly different purposes and behavior. Understanding their differences helps in determining how to structure your Dockerfile based on the intended behavior of the container.
 
 ### 1. **CMD**
