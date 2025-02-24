@@ -14,8 +14,8 @@ https://stackoverflow.com/questions/74000168/running-a-express-server-from-wsl-u
 
 __docker/docker-compose versions__\
 https://docs.docker.com/engine/reference/commandline/version/ \
-`docker version` - docker version\
-`docker --version` - docker CLI version\
+`docker version` - detailed version information\
+`docker -v` or `docker --version` - version in short format\
 `docker compose version`
 
 __status/start/stop in wsl2__
