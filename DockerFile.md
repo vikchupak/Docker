@@ -1,3 +1,27 @@
+## `ARG` build-time arguments (build-time configurations)
+
+```dockerfile
+ARG <name>[=<default value>]
+```
+
+- **ARG values are available only during the build process. They do not persist in the final image.**
+- You can reference an ARG value in subsequent instructions like RUN, ENV, or LABEL by prefixing it with $ (e.g., $ARG_NAME).
+- You can override the default value by passing a new value using the --build-arg flag during the build: `docker build --build-arg APP_ENV=production -t my-app .`
+- If a default value is not defined and no value is passed during the build, the ARG will remain undefined (empty string).
+- Docker does not raise an error if you pass a --build-arg for an argument that is not declared in the Dockerfile. It silently ignores the argument.
+
+## `ENV` runtime environment variables (runtime configurations)
+
+```dockerfile
+FROM ubuntu:latest
+ENV APP_ENV=production
+CMD echo "Running in $APP_ENV mode"
+# Output: Running in production mode
+```
+
+- The ENV instruction in a Dockerfile is used to define environment variables that persist within the container at runtime.
+- ENV can be overridden when running the container `docker run -e APP_ENV=development my-app`
+
 ## `USER`
 
 The USER command in a Dockerfile is used to specify the user that will run subsequent commands inside the container. By default, Docker containers run as the root user.
@@ -39,18 +63,6 @@ USER root
 RUN apt-get update && apt-get install -y ruby make more-thing-here
 USER jenkins # drop back to the regular jenkins user - good practice
 ```
-
-## `ARG` build-time arguments
-
-```dockerfile
-ARG <name>[=<default value>]
-```
-
-- ARG values are available only during the build process. They do not persist in the final image.
-- You can reference an ARG value in subsequent instructions like RUN, ENV, or LABEL by prefixing it with $ (e.g., $ARG_NAME).
-- You can override the default value by passing a new value using the --build-arg flag during the build: `docker build --build-arg APP_ENV=production -t my-app .`
-- If a default value is not defined and no value is passed during the build, the ARG will remain undefined (empty string).
-- Docker does not raise an error if you pass a --build-arg for an argument that is not declared in the Dockerfile. It silently ignores the argument.
 
 ## `WORKDIR`
 
