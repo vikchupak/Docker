@@ -19,8 +19,23 @@ CMD echo "Running in $APP_ENV mode"
 # Output: Running in production mode
 ```
 
-- The ENV instruction in a Dockerfile is used to define environment variables that persist within the container at runtime.
+- **The ENV is used to define environment variables that persist within the container at runtime.**
 - ENV can be overridden when running the container `docker run -e APP_ENV=development my-app`
+
+#### Difference Between `ARG` and `ENV`
+| Feature       | `ARG`  | `ENV`  |
+|--------------|--------|--------|
+| Scope        | **Build-time** | **Runtime** |
+| Available in Container? | ❌ No | ✅ Yes |
+| Can be overridden at runtime? | ❌ No | ✅ Yes |
+| Default value in final image | ❌ No | ✅ Yes |
+| Example usage | `ARG BUILD_VERSION=1.0` | `ENV APP_VERSION=1.0` |
+
+---
+
+### **Best Practices**
+✅ Use `ARG` for build-time variables (e.g., version numbers).  
+✅ Use `ENV` for runtime configurations (e.g., database URLs).  
 
 ## `USER`
 
